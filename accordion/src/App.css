@@ -6,7 +6,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} /* Accordion.css */
+}
+
+/* Accordion.css */
 button {
   background-color: #eee;
   color: #444;
@@ -20,7 +22,7 @@ button {
   transition: 0.4s;
 }
 p {
-  padding: 12px;
+  padding: 1.2rem;
   margin: 0px;
   background-color: white;
   color: #333;
@@ -29,13 +31,6 @@ p {
   transition: max-height 0.2s ease-out;
 }
 /* Accordion.css */
-.active,
-button:hover {
-  background-color: #ccc;
-}
-.active:after {
-  content: '\2212';
-}
 button:after {
   content: '\002B';
   color: #777;
@@ -43,9 +38,13 @@ button:after {
   float: right;
   margin-left: 5px;
 }
-/* button:active {
-  transform: scale(0.95);
-} */
+button:active button:hover {
+  background-color: #ccc;
+}
+button:active:after {
+  content: '\2212';
+}
+
 button:focus {
   outline: none;
 }
@@ -55,9 +54,10 @@ button:focus {
     font-size: 16px;
   }
 }
+
 /* App.css */
-.accordion-container {
+.container {
+  margin-top: 200px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }

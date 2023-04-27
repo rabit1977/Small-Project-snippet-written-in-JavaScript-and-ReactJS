@@ -37,7 +37,7 @@ function Accordion() {
 }
 function App() {
   return (
-    <div>
+    <div className='container'>
       <Accordion items={items} />
     </div>
   );
