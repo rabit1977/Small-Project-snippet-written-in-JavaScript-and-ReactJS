@@ -13,3 +13,26 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+body {
+  margin: 0;
+}
+.icon-app-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  display: flex;
+}
+.icon-app-bar a {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 2rem;
+}
+.icon-app-bar a:hover {
+  background-color: #444;
+}
+.active {
+  background-color: #04aa6d;
+}
